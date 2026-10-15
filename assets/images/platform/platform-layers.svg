@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="t d">
+<title id="t">The seven layers of SkillWiz 2.0</title>
+<desc id="d">Seven stacked layers: Student Intelligence, Learning Orchestration, Assessment and Evidence, Mentoring and Guidance, Industry Alignment, Outcome Engine and University Intelligence, all feeding the Karm-Patri.</desc>
+<rect width="1200" height="900" fill="#FFF8EE"/>
+<g font-family="Manrope,Segoe UI,Arial,sans-serif">
+<text x="80" y="92" font-size="26" font-weight="800" letter-spacing="5" fill="#F47B20">THE OPERATING LAYER</text>
+<text x="80" y="140" font-size="40" font-weight="800" fill="#1A1A1A">Seven layers. One verified record.</text>
+<g font-size="28" font-weight="800">
+<g transform="translate(80,190)">
+<rect width="780" height="76" rx="14" fill="#0F5132"/><text x="32" y="48" fill="#FFF8EE">University Intelligence</text><text x="748" y="48" fill="#E1B532" text-anchor="end" font-size="22">07</text></g>
+<g transform="translate(80,282)">
+<rect width="780" height="76" rx="14" fill="#F47B20"/><text x="32" y="48" fill="#FFF8EE">Outcome Engine</text><text x="748" y="48" fill="#FFF8EE" text-anchor="end" font-size="22">06</text></g>
+<g transform="translate(80,374)">
+<rect width="780" height="76" rx="14" fill="#0F5132"/><text x="32" y="48" fill="#FFF8EE">Industry Alignment</text><text x="748" y="48" fill="#E1B532" text-anchor="end" font-size="22">05</text></g>
+<g transform="translate(80,466)">
+<rect width="780" height="76" rx="14" fill="#F47B20"/><text x="32" y="48" fill="#FFF8EE">Mentoring &amp; Guidance</text><text x="748" y="48" fill="#FFF8EE" text-anchor="end" font-size="22">04</text></g>
+<g transform="translate(80,558)">
+<rect width="780" height="76" rx="14" fill="#0F5132"/><text x="32" y="48" fill="#FFF8EE">Assessment &amp; Evidence</text><text x="748" y="48" fill="#E1B532" text-anchor="end" font-size="22">03</text></g>
+<g transform="translate(80,650)">
+<rect width="780" height="76" rx="14" fill="#F47B20"/><text x="32" y="48" fill="#FFF8EE">Learning Orchestration</text><text x="748" y="48" fill="#FFF8EE" text-anchor="end" font-size="22">02</text></g>
+<g transform="translate(80,742)">
+<rect width="780" height="76" rx="14" fill="#0F5132"/><text x="32" y="48" fill="#FFF8EE">Student Intelligence</text><text x="748" y="48" fill="#E1B532" text-anchor="end" font-size="22">01</text></g>
+</g>
+<!-- Karm-Patri bracket -->
+<path d="M890 206 H930 V802 H890" fill="none" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M930 504 H960" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+<rect x="960" y="440" width="170" height="128" rx="16" fill="#1A1A1A"/>
+<text x="1045" y="494" font-size="30" font-weight="800" fill="#E1B532" text-anchor="middle">Karm-</text>
+<text x="1045" y="530" font-size="30" font-weight="800" fill="#E1B532" text-anchor="middle">Patri</text>
+</g>
+</svg>

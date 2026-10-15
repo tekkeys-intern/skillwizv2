@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="t d">
+<title id="t">The Karm-Patri as an unfurling scroll</title>
+<desc id="d">A flat scroll unrolling to reveal eight scored bars, a Placeability ring and a verified seal.</desc>
+<rect width="1200" height="1200" fill="#FFF8EE"/>
+<circle cx="1080" cy="130" r="170" fill="#F47B20" opacity=".16"/>
+<circle cx="110" cy="1110" r="200" fill="#0F5132" opacity=".10"/>
+<rect x="95" y="60" width="1010" height="76" rx="38" fill="#0F5132"/>
+<ellipse cx="95" cy="98" rx="28" ry="38" fill="#0B3D25"/><ellipse cx="1105" cy="98" rx="28" ry="38" fill="#0B3D25"/>
+<path d="M130 130 H1070 V1040 Q1070 1070 1040 1070 H160 Q130 1070 130 1040Z" fill="#FFFFFF" stroke="#EADFC9" stroke-width="3"/>
+<rect x="110" y="1045" width="980" height="70" rx="35" fill="#F47B20"/>
+<ellipse cx="110" cy="1080" rx="26" ry="35" fill="#C65E0C"/><ellipse cx="1090" cy="1080" rx="26" ry="35" fill="#C65E0C"/>
+<g font-family="Manrope,Segoe UI,Arial,sans-serif">
+<text x="190" y="222" font-size="26" font-weight="800" letter-spacing="6" fill="#F47B20">KARM-PATRI</text>
+<text x="190" y="290" font-size="52" font-weight="800" fill="#1A1A1A">Verified capability</text>
+<text x="190" y="348" font-size="52" font-weight="800" fill="#1A1A1A">record</text>
+<text x="190" y="392" font-size="26" font-weight="600" fill="#5C5444">Anjali Sharma · B.Tech ECE · Year 3</text>
+<circle cx="900" cy="262" r="78" fill="none" stroke="#EFE5D0" stroke-width="20"/>
+<circle cx="900" cy="262" r="78" fill="none" stroke="#F47B20" stroke-width="20" stroke-linecap="round" stroke-dasharray="426 490" transform="rotate(-90 900 262)"/>
+<text x="900" y="282" font-size="56" font-weight="800" fill="#0F5132" text-anchor="middle">87</text>
+<text x="900" y="372" font-size="22" font-weight="800" letter-spacing="3" fill="#5C5444" text-anchor="middle">PLACEABILITY</text>
+<g font-size="28" font-weight="700" fill="#26221B"><text x="190" y="438">Cognitive</text><rect x="470" y="416" width="530" height="22" rx="11" fill="#EFE5D0"/><rect x="470" y="416" width="487" height="22" rx="11" fill="#0F5132"/><text x="1040" y="438" text-anchor="end" fill="#0F5132" font-weight="800">92</text><text x="190" y="510">Coding</text><rect x="470" y="488" width="530" height="22" rx="11" fill="#EFE5D0"/><rect x="470" y="488" width="413" height="22" rx="11" fill="#0F5132"/><text x="1040" y="510" text-anchor="end" fill="#0F5132" font-weight="800">78</text><text x="190" y="582">Core technical</text><rect x="470" y="560" width="530" height="22" rx="11" fill="#EFE5D0"/><rect x="470" y="560" width="450" height="22" rx="11" fill="#0F5132"/><text x="1040" y="582" text-anchor="end" fill="#0F5132" font-weight="800">85</text><text x="190" y="654">Company mocks</text><rect x="470" y="632" width="530" height="22" rx="11" fill="#EFE5D0"/><rect x="470" y="632" width="381" height="22" rx="11" fill="#F47B20"/><text x="1040" y="654" text-anchor="end" fill="#0F5132" font-weight="800">72</text><text x="190" y="726">Interview</text><rect x="470" y="704" width="530" height="22" rx="11" fill="#EFE5D0"/><rect x="470" y="704" width="445" height="22" rx="11" fill="#0F5132"/><text x="1040" y="726" text-anchor="end" fill="#0F5132" font-weight="800">84</text><text x="190" y="798">Projects</text><rect x="470" y="776" width="530" height="22" rx="11" fill="#EFE5D0"/><rect x="470" y="776" width="344" height="22" rx="11" fill="#F47B20"/><text x="1040" y="798" text-anchor="end" fill="#0F5132" font-weight="800">65</text><text x="190" y="870">Credentials</text><rect x="470" y="848" width="530" height="22" rx="11" fill="#EFE5D0"/><rect x="470" y="848" width="397" height="22" rx="11" fill="#0F5132"/><text x="1040" y="870" text-anchor="end" fill="#0F5132" font-weight="800">75</text><text x="190" y="942">Founder track</text><rect x="470" y="920" width="530" height="22" rx="11" fill="#EFE5D0"/><rect x="470" y="920" width="307" height="22" rx="11" fill="#F47B20"/><text x="1040" y="942" text-anchor="end" fill="#0F5132" font-weight="800">58</text></g>
+</g>
+<g transform="translate(1000,1000)"><circle r="44" fill="#E1B532" stroke="#FFFFFF" stroke-width="6"/><circle r="32" fill="none" stroke="#1A1A1A" stroke-width="4"/><path d="M-15 2 L-4 13 L17 -12" fill="none" stroke="#1A1A1A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

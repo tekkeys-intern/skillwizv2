@@ -1,0 +1,1 @@
+Place platform images here. See README.txt for specs.

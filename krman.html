@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karm-Patri Operating Layer Hub</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --saffron: #F47B20;
+      --forest: #0F5132;
+      --cream: #FFF8EE;
+      --charcoal: #1A1A1A;
+      --mustard: #E1B532;
+      --hair: #D9D2C4;
+      --fd: "Anton", "Impact", sans-serif;
+      --fb: "Manrope", -apple-system, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #F4EFEA;
+      font-family: var(--fb);
+    }
+
+    .karm-patri-hub-card {
+      background: #ffffff;
+      border: 1px solid var(--hair);
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(26,26,26,.06);
+      padding: 20px;
+      width: 100%;
+      max-width: 620px;
+      box-sizing: border-box;
+    }
+
+    .karm-patri-hub {
+      width: 100%;
+      height: auto;
+      display: block;
+      user-select: none;
+    }
+    .karm-patri-hub .lh1 {
+      font: 800 12px var(--fb);
+      letter-spacing: 4px;
+      fill: var(--saffron);
+    }
+    .karm-patri-hub .lh2 {
+      font: 800 15px var(--fb);
+      fill: var(--charcoal);
+    }
+    .karm-patri-hub .sp {
+      stroke: var(--hair);
+      stroke-width: 2;
+      fill: none;
+    }
+    .karm-patri-hub .mv {
+      fill: var(--saffron);
+    }
+    .karm-patri-hub .ring {
+      stroke: var(--saffron);
+      stroke-width: 1.5;
+      stroke-dasharray: 4 4;
+      fill: none;
+      opacity: .5;
+    }
+    .karm-patri-hub .core {
+      fill: var(--forest);
+    }
+    .karm-patri-hub .ct {
+      font-family: var(--fd);
+      font-size: 18px;
+      fill: #ffffff;
+      text-anchor: middle;
+      letter-spacing: 0.04em;
+    }
+    .karm-patri-hub .cs {
+      font: 700 9.5px var(--fb);
+      fill: #CFE0D6;
+      text-anchor: middle;
+    }
+    .karm-patri-hub .csub {
+      font: 800 8px var(--fb);
+      fill: var(--mustard);
+      text-anchor: middle;
+      letter-spacing: 0.5px;
+    }
+    .karm-patri-hub .node {
+      cursor: pointer;
+      outline: none;
+    }
+    .karm-patri-hub .node rect {
+      fill: #ffffff;
+      stroke: var(--forest);
+      stroke-width: 2;
+      transition: fill 0.2s ease, stroke 0.2s ease;
+    }
+    .karm-patri-hub .node text {
+      font: 800 11.5px var(--fb);
+      fill: var(--forest);
+      text-anchor: middle;
+      pointer-events: none;
+      transition: fill 0.2s ease;
+    }
+    .karm-patri-hub .node:hover rect {
+      fill: var(--forest);
+      stroke: var(--forest);
+    }
+    .karm-patri-hub .node:hover text {
+      fill: #ffffff;
+    }
+    .karm-patri-hub .node.on rect {
+      fill: var(--saffron);
+      stroke: var(--saffron);
+    }
+    .karm-patri-hub .node.on text {
+      fill: #ffffff;
+    }
+    .karm-patri-hub .node:focus-visible rect {
+      stroke: var(--mustard);
+      stroke-width: 3.5;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .karm-patri-hub .mv { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="karm-patri-hub-card">
+    <svg class="karm-patri-hub" id="karmPatriHub" viewBox="0 0 620 470" role="img" aria-label="Seven platform layers continuously feeding one verified Karm-Patri record">
+      <!-- Rendered dynamically -->
+    </svg>
+  </div>
+
+  <script>
+    (function initKarmPatriHub() {
+      const N = [
+        'Student Intelligence',
+        'Learning Orchestration',
+        'Assessment & Evidence',
+        'Mentoring & Guidance',
+        'Industry Alignment',
+        'Outcome Engine',
+        'University Intelligence'
+      ];
+      const W = [150, 156, 154, 150, 142, 126, 158];
+
+      const cx = 310, cy = 265, rx = 205, ry = 148;
+      let spokes = '', movers = '', nodes = '';
+
+      N.forEach((name, k) => {
+        const angle = (k * 360 / N.length - 90) * Math.PI / 180;
+        const x = +(cx + rx * Math.cos(angle)).toFixed(1);
+        const y = +(cy + ry * Math.sin(angle)).toFixed(1);
+        const w = W[k], hw = w / 2;
+
+        spokes += `<line class="sp" x1="${x}" y1="${y}" x2="${cx}" y2="${cy}"/>`;
+
+        movers += `
+          <circle class="mv" r="4">
+            <animateMotion dur="2.4s" begin="${(k * 0.34).toFixed(2)}s" repeatCount="indefinite" path="M${x},${y} L${cx},${cy}"/>
+          </circle>
+          <circle class="mv" r="3" opacity="0.65">
+            <animateMotion dur="2.4s" begin="${(k * 0.34 + 1.2).toFixed(2)}s" repeatCount="indefinite" path="M${x},${y} L${cx},${cy}"/>
+          </circle>`;
+
+        nodes += `
+          <g class="node${k === 0 ? ' on' : ''}" tabindex="0" role="button" aria-label="Layer ${k+1}: ${name}" data-idx="${k}">
+            <rect x="${x - hw}" y="${y - 17}" width="${w}" height="34" rx="17"/>
+            <text x="${x}" y="${y + 4.2}">${name.replace('&', '&amp;')}</text>
+          </g>`;
+      });
+
+      const header = `
+        <text x="${cx}" y="32" class="lh1" text-anchor="middle">THE OPERATING LAYER</text>
+        <text x="${cx}" y="52" class="lh2" text-anchor="middle">Seven layers · One verified record</text>
+      `;
+
+      const centerCircle = `
+        <circle class="ring" cx="${cx}" cy="${cy}" r="68"/>
+        <circle class="core" cx="${cx}" cy="${cy}" r="58"/>
+        <text class="ct" x="${cx}" y="${cy - 3}">KARM-PATRI</text>
+        <text class="cs" x="${cx}" y="${cy + 15}">one verified record</text>
+        <text class="csub" x="${cx}" y="${cy + 28}">7 layers · 1 outcome</text>
+      `;
+
+      const hubSvg = document.getElementById('karmPatriHub');
+      hubSvg.innerHTML = header + spokes + movers + centerCircle + nodes;
+
+      hubSvg.addEventListener('click', (e) => {
+        const node = e.target.closest('.node');
+        if (!node) return;
+        hubSvg.querySelectorAll('.node').forEach(n => n.classList.remove('on'));
+        node.classList.add('on');
+      });
+
+      hubSvg.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          const node = e.target.closest('.node');
+          if (node) {
+            e.preventDefault();
+            hubSvg.querySelectorAll('.node').forEach(n => n.classList.remove('on'));
+            node.classList.add('on');
+          }
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
