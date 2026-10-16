@@ -4,7 +4,7 @@
 body{font:400 17px/1.65 var(--fb);color:var(--charcoal);background:var(--paper);-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}:focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
-.wrap{max-width:1240px;margin:0 auto;padding:0 32px}section{padding:96px 0}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}section{padding:36px 0 72px}
 .cream{background:var(--cream)}.dark{background:var(--forest);color:var(--cream)}.char{background:var(--charcoal);color:var(--cream)}
 .d{font-family:var(--fd);font-weight:400;text-transform:uppercase;letter-spacing:1px;line-height:1}
 .xl{font-size:clamp(60px,9vw,128px);line-height:.92;letter-spacing:2px}.l{font-size:clamp(40px,5vw,76px)}.m{font-size:clamp(28px,3vw,48px);line-height:1.05}
@@ -143,8 +143,9 @@ td:first-child{font-weight:600}
 .wc1 .n.s2{color:#C65E0C}.wc1 .eb{color:#B85300}
 .car .eb{color:var(--mustard)}
 .inv .eb,.card.inv .eb,.dark .card .eb{color:var(--mustard)}
-/* ---- hero layout fix: centred content, clear of nav and controls, with a relevant proof panel ---- */
-section{padding:72px 0}
+section{padding:36px 0 72px;scroll-margin-top:72px}
+section[id],[id]{scroll-margin-top:72px}
+#hero,#top{scroll-margin-top:0}
 #hero{height:min(calc(100svh - 72px),800px);min-height:620px}
 #hero .cont{inset:0 0 118px 0;bottom:auto;top:0;height:calc(100% - 118px);display:flex;align-items:center;justify-content:space-between;gap:48px;padding-top:40px}
 #hero .cont .tx{flex:1 1 58%;max-width:680px}
@@ -245,10 +246,10 @@ form input:focus,form select:focus,form textarea:focus{outline:2px solid var(--s
 @media(max-width:900px){.why-top{grid-template-columns:1fr}}
 h1,h2,h3,.d{text-wrap:balance}
 @media(max-width:700px){.lvis{display:none}.tabs{flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x proximity;margin-right:-20px;padding-right:20px;padding-bottom:6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tabs .pill{flex:none;scroll-snap-align:start;white-space:nowrap}#lp .lgh{font-size:130px}}
-@media(max-width:640px){.card{padding:22px}section{padding:56px 0}.wrap{padding:0 20px}}
+@media(max-width:640px){.card{padding:22px}section{padding:28px 0 56px}.wrap{padding:0 20px}}
 
 /* ---- Industry Radar ---- */
-.radar-container{margin-top:28px;scroll-margin-top:80px}
+.radar-container{margin-top:0}
 .sectors{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
 .sectors button{font-family:var(--fd);text-transform:uppercase;text-align:center;padding:8px 6px;font-size:.84rem;letter-spacing:.02em;color:var(--forest);background:#fff;border:1.5px solid var(--hair);border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;user-select:none;line-height:1.2;min-height:36px;transition:border-color .15s,background .15s,color .15s,box-shadow .15s,transform .15s}
 .sectors button:hover{border-color:var(--saffron);transform:translateY(-1px)}
