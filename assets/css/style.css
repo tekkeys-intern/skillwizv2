@@ -317,3 +317,21 @@ h1,h2,h3,.d{text-wrap:balance}
 .legal-card p{font-size:14px;margin-bottom:6px;color:#333}
 .legal-nav-strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px;padding-top:28px;border-top:1px solid var(--hair)}
 
+/* ---- FAQ Section ---- */
+.faq-grid{display:grid;grid-template-columns:1fr;gap:14px;max-width:960px;margin-top:40px}
+.faq-item{background:#fff;border:1px solid var(--hair);border-radius:12px;padding:0;overflow:hidden;transition:border-color .2s,box-shadow .2s}
+.faq-item:hover{border-color:var(--saffron);box-shadow:0 4px 16px rgba(26,26,26,.06)}
+.faq-item[open]{border-color:var(--forest);box-shadow:0 6px 20px rgba(15,81,50,.08)}
+.faq-item summary{font:700 17px/1.4 var(--fb);color:var(--charcoal);padding:22px 28px;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;user-select:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"";width:10px;height:10px;border-right:2px solid var(--forest);border-bottom:2px solid var(--forest);transform:rotate(45deg);transition:transform .25s ease;flex-shrink:0;margin-right:4px}
+.faq-item[open] summary::after{transform:rotate(-135deg);border-color:var(--saffron)}
+.faq-item[open] summary{color:var(--forest);border-bottom:1px solid var(--hair);background:rgba(255,248,238,.45)}
+.faq-body{padding:22px 28px 26px;font-size:15.5px;line-height:1.75;color:#2B2B2B}
+.faq-body p{margin:0;max-width:none}
+.faq-cta{margin-top:36px;padding:26px 30px;background:#fff;border:1px solid var(--hair);border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:960px;box-shadow:0 4px 16px rgba(26,26,26,.04)}
+@media(max-width:640px){
+  .faq-item summary{padding:18px 20px;font-size:15.5px}
+  .faq-body{padding:18px 20px 22px;font-size:14.5px}
+  .faq-cta{flex-direction:column;align-items:flex-start}
+}
